@@ -74,63 +74,14 @@ const Header: React.FC = () => {
             >
               <div className="flex flex-col">
                 <Link
-                  to="/"
-                  className="py-2 px-4 text-black hover:bg-gray-100 text-lg"
-                  onClick={() => setDropDown(false)}
-                >
-                  Buy
-                </Link>
-                <hr />
-                <Link
-                  to="/about"
-                  className="py-2 px-4 text-black hover:bg-gray-100 text-lg"
-                  onClick={() => setDropDown(false)}
-                >
-                  Sell
-                </Link>
-                <hr />
-                <Link
-                  to="/services"
-                  className="py-2 px-4 text-black hover:bg-gray-100 text-lg"
-                  onClick={() => setDropDown(false)}
-                >
-                  Explore
-                </Link>
-                <hr />
-                <Link
-                  to="/contact"
-                  className="py-2 px-4 text-black hover:bg-gray-100 text-lg"
-                  onClick={() => setDropDown(false)}
-                >
-                  Request a Property
-                </Link>
-                <hr />
-                <Link
-                  to="/contact"
-                  className="py-2 px-4 text-black hover:bg-gray-100 text-lg"
-                  onClick={() => setDropDown(false)}
-                >
-                  Post a Property
-                </Link>
-                <hr />
-                <Link
-                  to="/contact"
-                  className="py-2 px-4 text-black hover:bg-gray-100 text-lg"
-                  onClick={() => setDropDown(false)}
-                >
-                  News
-                </Link>
-                <hr />
-                <Link
-                  to="/contact"
-                  className="py-2 px-4 text-black hover:bg-gray-100 text-lg"
-                  onClick={() => setDropDown(false)}
+                  to="#"
+                  className="py-2 px-4 mb-3 text-black hover:bg-gray-100 text-lg"
                 >
                   Sign up
                 </Link>
                 <hr />
                 <Link
-                  to="/contact"
+                  to="#"
                   className="py-2 px-4 mb-3 text-black hover:bg-gray-100 text-lg"
                   onClick={() => setDropDown(false)}
                 >
