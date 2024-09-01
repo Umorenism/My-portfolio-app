@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css"; */
+
+.custom-pattern{
+    background: url('/src/asset/blu2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img{
+    background: url('/src/asset/portcover.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
