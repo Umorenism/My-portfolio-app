@@ -22,7 +22,7 @@ const Project = () => {
           />
           <ProjectCard
             img={img}
-            title="CHAMBS"
+            title="Agency"
             content="Front-End"
             onReadMore={() => {}}
           />
