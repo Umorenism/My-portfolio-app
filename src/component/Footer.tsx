@@ -8,23 +8,23 @@ const Footer = () => {
             <h2 className="text-2xl font-bold">My-Project</h2>
             <div className="h-1 rounded-full w-full bg-orange-600" />
             <div className="flex-col">
-              <div>
+              <div className="py-4">
                 <a className="py-4">Real-Estate</a>
               </div>
-              <div>
+              <div className="py-4">
                 <a className="py-4">Ibom Transportation</a>
               </div>
-              <div>
+              <div className="py-4">
                 {" "}
                 <a className="py-4">Exchange(Web3)</a>
               </div>
-              <div>
+              <div className="py-4">
                 <a className="py-4">Agency</a>
               </div>
-              <div>
+              <div className="py-4">
                 <a className="py-4">Get-Property</a>
               </div>
-              <div>
+              <div className="py-4">
                 <a className="py-4">My-Portfolio</a>
               </div>
             </div>
