@@ -1,5 +1,9 @@
 import ProjectCard from "../component/ProjectCard";
 import img from "../asset/dev.webp";
+import img2 from "../asset/house.png";
+import img3 from "../asset/bus.png";
+import img4 from "../asset/interior.png.jpg";
+import img5 from "../asset/reform.png";
 const Project = () => {
   return (
     <div className="bg-gray-950 text-white min-h-screen p-4 justify-center flex items-center ">
@@ -9,13 +13,13 @@ const Project = () => {
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
           <ProjectCard
-            img={img}
+            img={img2}
             title="Get Property"
             content="Mern stack"
             onReadMore={() => {}}
           />
           <ProjectCard
-            img={img}
+            img={img3}
             title="IBT(Ibom Transportation)"
             content="Front-End"
             onReadMore={() => {}}
@@ -33,13 +37,13 @@ const Project = () => {
             onReadMore={() => {}}
           />
           <ProjectCard
-            img={img}
-            title="Next"
-            content="Collaabration"
+            img={img4}
+            title="Real-Estate"
+            content="Collabration"
             onReadMore={() => {}}
           />
           <ProjectCard
-            img={img}
+            img={img5}
             title="Reform7"
             content="Front-End"
             onReadMore={() => {}}

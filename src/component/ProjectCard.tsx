@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 interface ProjectCardProps {
   img: string;
@@ -14,7 +15,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   onReadMore,
 }) => {
   return (
-    <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
+    <motion.div
+      className="bg-gray-600 p-4 rounded-lg shadow-lg"
+      whileHover={{
+        scale: 1.05,
+        boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.2)",
+      }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
       <img
         src={img}
         alt={title}
@@ -28,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       >
         GitHub
       </button>
-    </div>
+    </motion.div>
   );
 };
 

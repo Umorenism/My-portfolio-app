@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Service from "./pages/Service";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
+import ContactForm from "./pages/Location";
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Route path="/service" element={<Service />} />
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/location" element={<ContactForm />} />
       </Routes>
       <Footer />
     </Router>

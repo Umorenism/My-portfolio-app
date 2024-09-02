@@ -63,37 +63,17 @@ const Header: React.FC = () => {
           </Link>
         </nav>
         {/* Dropdown Button for Desktop */}
-        <button className="relative hidden md:block" onClick={toggleDropDown}>
-          <TiThMenu size={30} />
-          {dropDown && (
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              className="absolute top-full right-32 mt-2 bg-slate-300 shadow-lg rounded-md w-52 left-0 z-50"
-            >
-              <div className="flex flex-col">
-                <Link
-                  to="#"
-                  className="py-2 px-4 mb-3 text-black hover:bg-gray-100 text-lg"
-                >
-                  Sign up
-                </Link>
-                <hr />
-                <Link
-                  to="#"
-                  className="py-2 px-4 mb-3 text-black hover:bg-gray-100 text-lg"
-                  onClick={() => setDropDown(false)}
-                >
-                  Login
-                </Link>
-              </div>
-            </motion.div>
-          )}
-        </button>
+        <Link to="/location">
+          <button
+            className="relative hidden md:block bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 py-2 p-2 rounded-md"
+            onClick={toggleDropDown}
+          >
+            Contact Me
+          </button>
+        </Link>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden text-black" onClick={toggleMenu}>
+        <button className="md:hidden text-white" onClick={toggleMenu}>
           <TiThMenu size={28} />
         </button>
       </div>
@@ -104,45 +84,45 @@ const Header: React.FC = () => {
           initial={{ opacity: 0, x: "100%" }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: "100%" }}
-          className="fixed inset-0 bg-white shadow-lg md:hidden z-50"
+          className="fixed inset-0 bg-black text-white shadow-lg md:hidden z-50"
         >
           <div className="flex justify-end p-4">
-            <button className="text-black" onClick={toggleMenu}>
+            <button className="text-white" onClick={toggleMenu}>
               <TiThMenu size={28} />
             </button>
           </div>
           <div className="flex flex-col items-center p-4">
             <Link
               to="/"
-              className="py-2 text-black text-lg"
+              className="py-2 text-white text-lg"
               onClick={toggleMenu}
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="py-2 text-black text-lg"
+              className="py-2 text-white text-lg"
               onClick={toggleMenu}
             >
               About
             </Link>
             <Link
               to="/service"
-              className="py-2 text-black text-lg"
+              className="py-2 text-white text-lg"
               onClick={toggleMenu}
             >
               Service
             </Link>
             <Link
               to="/project"
-              className="py-2 text-black text-lg"
+              className="py-2 text-white text-lg"
               onClick={toggleMenu}
             >
               Prroject
             </Link>
             <Link
               to="/contact"
-              className="py-2 text-black text-lg"
+              className="py-2 text-white text-lg"
               onClick={toggleMenu}
             >
               Contact

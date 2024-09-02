@@ -1,4 +1,4 @@
-import pic from "../asset/dev.webp";
+import pic from "../asset/my-pic.jpeg";
 
 const About = () => {
   return (
@@ -11,8 +11,8 @@ const About = () => {
       {/* Content Section */}
       <div className="bg-transparent w-full flex flex-col md:flex-row mt-4 text-white rounded-lg overflow-hidden max-w-5xl mx-auto">
         {/* Left-side image */}
-        <div className="md:w-[40%] h-64 md:h-auto flex-shrink-0 flex justify-center items-center p-4">
-          <div className="shadow-white shadow-lg  w-full h-full">
+        <div className="md:w-[40%] h-full md:h-auto flex-shrink-0 flex justify-center items-center p-4">
+          <div className="shadow-white shadow-lg  w-full h-[300px]">
             <img
               src={pic}
               alt="About Me"
